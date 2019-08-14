@@ -1,0 +1,49 @@
+.index-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  header, footer {
+    height: .44rem;
+    background: #00b38a;
+    text-align: center;
+    line-height: .44rem;
+    color: #fff;
+    font-size: .18rem;
+  }
+  main {
+    flex: 1;
+    overflow: hidden;
+    background: #fff;
+  }
+  footer {
+    color: #c2cfcc;
+    background: #f6f6f6;
+    ul {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include border(1px 0 0 0, red);
+      // border-top: 1px solid red;
+      li {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i, b {
+          font-weight: 100;
+        }
+
+        i {
+          margin-top: -0.02rem;
+        }
+        
+        &.active {
+          background: #e7f3f0;
+          color: #00b38a;
+        }
+      }
+    }
+  }
+}
